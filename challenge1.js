@@ -1,6 +1,6 @@
 // Aprogram that prompts the user to input student marks.
 
-let marks = 60;
+let marks =75;
 if (marks >=79 && marks < 100){
     console.log("A");
 }
