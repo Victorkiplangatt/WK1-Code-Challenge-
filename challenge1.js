@@ -1,18 +1,22 @@
 // Aprogram that prompts the user to input student marks.
 
-let marks = prompt ("Please enter your marks");
-if (marks >=79 && marks < 100){
+let marks = prompt("Please enter your marks");
+let myMarks = parseInt(marks);
+console.log(typeof marks);
+
+function calculateMarks(l) {
+if (l >= 79 && l < 100) {
     console.log("A");
-}
-else if (marks >=60 && marks <79){
+  } else if (l >= 60 && l < 79) {
     console.log("B");
+  } else if (l  >= 49 && l < 59) {
+    console.log("C");
+  } else if (l >= 40 && l < 49) {
+    console.log("D");
+  } else if (l >= 0 && l < 40) {
+    console.log("E");
+  }
 }
-else if (marks >=49 && marks < 59){
-    console.log("C")
-}
-else if (marks >= 40 && marks < 49){
-    console.log("D")
-}
-else if (marks >= 0 && marks < 40){
-    console.log("E")
-}
+
+
+calculateMarks(myMarks)
